@@ -8,7 +8,7 @@ It works.
 
 ```typst
 #set par(first-line-indent: 2em)
-#import "@preview/indenta:0.0.1": fix-indent
+#import "@preview/indenta:0.0.2": fix-indent
 #show: fix-indent()
 
 ```
