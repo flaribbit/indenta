@@ -4,9 +4,13 @@
 
 = Title 1
 
-Indent
+== Section 1
+
+Indent // an empty line before this paragraph is needed
 
 Indent
+
+== Section 2
 
 #figure(rect(),caption: lorem(2))
 no indent
@@ -22,6 +26,8 @@ Indent
 
 = Title 2
 
+no indent // this is intentional
+
 $ f(x) $
 $ f(x) $
 no indent
@@ -32,3 +38,13 @@ $ f(x) $
 $ f(x) $
 
 Indent
+
+#table()[table]
+
+Indent
+
+```py
+print("hello")
+```
+
+`Indent`
