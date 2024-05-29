@@ -27,7 +27,6 @@ $"Indent"$
 Indent
 
 = Title 2
-
 no indent // this is intentional
 
 $ f(x) $
@@ -48,5 +47,7 @@ Indent
 ```py
 print("hello")
 ```
+
+#raw("Indent") // https://github.com/flaribbit/indenta/issues/6
 
 `Indent`
