@@ -34,7 +34,9 @@ When you use `fix-indent()` with other show rules, make sure to call `fix-indent
 #show: fix-indent()
 ```
 
-This package is in very early stage and may not work as expected in some cases. Minor fixes will be made at any time but the package in typst universe may not be updated immediately. You can check the latest version on [GitHub](https://github.com/flaribbit/indenta) then copy and paste the code to your typst file.
+This package is in very early stage and may not work as expected in some cases. Currently, there is no easy way to check if an element is inlined or not. If you got an unexpected result, you can try `fix-indent(unsafe: true)` to disable the check.
+
+Minor fixes will be made at any time but the package in typst universe may not be updated immediately. You can check the latest version on [GitHub](https://github.com/flaribbit/indenta) then copy and paste the code to your typst file.
 
 If it still doesn't work as expected, you can try another solution (aka fake-par solution):
 
