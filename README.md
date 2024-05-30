@@ -44,6 +44,6 @@ If it still doesn't work as expected, you can try another solution (aka fake-par
 #let fakepar=context{box();v(-measure(block()+block()).height)}
 #show heading: it=>it+fakepar
 #show figure: it=>it+fakepar
-#show math.equation: it=>it+fakepar
+#show math.equation.where(block: true): it=>it+fakepar
 // ... other elements
 ```
