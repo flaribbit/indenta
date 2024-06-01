@@ -19,14 +19,6 @@ It works.
 
 ## Note
 
-An empty line after heading is required for the fix to work. For example:
-
-```typst
-= Heading 1
-
-First paragraph.
-```
-
 When you use `fix-indent()` with other show rules, make sure to call `fix-indent()` **after other show rules**. For example:
 
 ```typst
@@ -34,9 +26,23 @@ When you use `fix-indent()` with other show rules, make sure to call `fix-indent
 #show: fix-indent()
 ```
 
-This package is in very early stage and may not work as expected in some cases. Currently, there is no easy way to check if an element is inlined or not. If you got an unexpected result, you can try `fix-indent(unsafe: true)` to disable the check.
+If you want to process the content inside your custom block, you can call `fix-indent` inside your block. For example:
 
-Minor fixes will be made at any time but the package in typst universe may not be updated immediately. You can check the latest version on [GitHub](https://github.com/flaribbit/indenta) then copy and paste the code to your typst file.
+```typst
+#block[#set text(fill: red)
+#show: fix-indent()
+
+Hello
+
+#table()[table]
+
+World
+]
+```
+
+This package is in a very early stage and may not work as expected in some cases. Currently, there is no easy way to check if an element is inlined or not. If you got an unexpected result, you can try `fix-indent(unsafe: true)` to disable the check.
+
+Minor fixes can be made at any time, but the package in typst universe may not be updated immediately. You can check the latest version on [GitHub](https://github.com/flaribbit/indenta) then copy and paste the code into your typst file.
 
 If it still doesn't work as expected, you can try another solution (aka fake-par solution):
 
