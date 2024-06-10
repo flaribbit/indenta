@@ -7,8 +7,7 @@ Indent
 = Title 1
 
 == Section 1
-
-Indent // an empty line before this paragraph is needed
+Indent
 
 Indent
 
@@ -27,8 +26,6 @@ $"Indent"$
 Indent
 
 = Title 2
-no indent // this is intentional
-
 $ f(x) $
 $ f(x) $
 no indent
