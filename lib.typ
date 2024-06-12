@@ -1,9 +1,9 @@
 // https://github.com/flaribbit/indenta
 #let fix-indent(unsafe: false)={
   return it=>{
-  let _is_block(e,fn)=fn==heading or (fn==math.equation and e.block) or (fn==raw and e.has("block") and e.block) or fn==figure or fn==block or fn==list.item or fn==enum.item or fn==table or fn==grid or fn==align
+  let _is_block(e,fn)=fn==heading or (fn==math.equation and e.block) or (fn==raw and e.has("block") and e.block) or fn==figure or fn==block or fn==list.item or fn==enum.item or fn==table or fn==grid or fn==align or (fn==quote and e.has("block") and e.block)
   // TODO: smallcaps returns styled(...)
-  let _is_inline(e,fn)=fn==text or fn==box or (fn==math.equation and not e.block) or (fn==raw and not (e.has("block") and e.block)) or fn==highlight or fn==overline or fn==smartquote or fn==strike or fn==sub or fn==super or fn==underline or fn==emph or fn==strong
+  let _is_inline(e,fn)=fn==text or fn==box or (fn==math.equation and not e.block) or (fn==raw and not (e.has("block") and e.block)) or fn==highlight or fn==overline or fn==smartquote or fn==strike or fn==sub or fn==super or fn==underline or fn==emph or fn==strong or (fn==quote and not (e.has("block") and e.block))
   let st=2
   for e in it.children{
     let fn=e.func()
