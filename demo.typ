@@ -48,3 +48,6 @@ print("hello")
 #raw("Indent") // https://github.com/flaribbit/indenta/issues/6
 
 `Indent`
+
+= Title 3
+*Indent* // https://github.com/flaribbit/indenta/issues/9
