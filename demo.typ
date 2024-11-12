@@ -16,7 +16,7 @@ Indent
 #figure(rect(),caption: lorem(2))
 no indent
 
-#figure(rect(),caption: lorem(2))
+#figure(rect(),caption: lorem(2))<fig>
 
 $"Indent"$
 
@@ -55,3 +55,6 @@ print("hello")
 #quote(block: true, attribution: [Test])[An apple a day keeps the doctor away.]
 
 Indent
+
+= Title 4
+@fig shows a function.
